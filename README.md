@@ -48,3 +48,5 @@
 
 ## Licencias:
 **Actualmente, este proyecto no tiene una licencia específica.  Si deseas contribuir o usarlo, contáctame.**
+
+![insignia](https://cdn1.gnarususercontent.com.br/6/409216/ff043987-239b-4661-bdb1-7f4ca6092c48.png)
