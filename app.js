@@ -1,5 +1,5 @@
 //Crea expresión regular para limitar los carácteres y solo permita letras y apóstrofe.
-const REGEX = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s']+$/;
+const REGEX = /^[a-zA-ZáéíóúÁÉÍÓÚñÑäÄëËïÏöÖüÜçÇ\s']+$/;
 
 //Crea la lista de amigos.
 let amigos = [];
@@ -26,7 +26,7 @@ function agregarAmigo() {
 
     //Verifica que el nombre no esté repetido.
     if(amigos.includes(nombreAmigo)){
-        alert(`El nombre ${nombreAmigo} ya existe en la lista, agregue un distintivo a ese nombre`);
+        alert(`El nombre ${nombreAmigo} ya existe en la lista, por favor, agregue un distintivo a ese nombre.`);
         return;
     }
 
@@ -57,7 +57,7 @@ function actualizarLista() {
 //Recorre la lista, selecciona aleatoreamente un nombre.
 function sortearAmigo() {
     if (amigos.length === 0) {
-        alert("No se encontraron amigos para sortear, agrega al menos un amigo");
+        alert("No se encontraron amigos para sortear, agrega al menos un amigo/a");
         return;
     }
 
@@ -66,5 +66,5 @@ function sortearAmigo() {
     
     //Muestra en el html el amigo que salió sorteado.
     let resultado = document.getElementById("resultado");
-    resultado.innerHTML =`Tu amigo sorteado es: ${amigoSorteado}`;
+    resultado.innerHTML =`Tu amigo/a sorteado/a es: ${amigoSorteado}`;
 }
